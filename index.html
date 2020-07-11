@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>Spaceman</title>
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="stylesheet" href="./mobileStyle.css" />
@@ -12,9 +12,9 @@
 
 	<div id="newWordScreen" class="screen show">
 		<input id="word" type="password" maxlength="20" placeholder="New Word" />
-		<small>* max 20 characteres</small>
-		<button id="showWord" class="button warn">Show word</button>
-		<button id="startGame" class="button">Start Game</button>
+		<small>* max 20 characteres. just letters, other chars will be removed.</small>
+		<button id="showWordBtn" class="button warn">Show word</button>
+		<button id="startGameBtn" class="button">Start Game</button>
 	</div>
 
 	<div id="gameScreen" class="screen">
@@ -66,6 +66,11 @@
 				<li><button>Z</button></li>
 			</ul>
 		</div>
+	</div>
+
+	<div class="endGame">
+		<div class="mask"></div>
+		<div class="message"></div>
 	</div>
 
 	<script src="game.js"></script>

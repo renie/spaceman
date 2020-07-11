@@ -110,9 +110,9 @@
 	}
 
 	.alphabet button.used:before {
-		top: 9px;
-	    left: 22px;
-	    transform: rotate(45deg) scale(3.3);
+		top: 15px;
+	    left: 24px;
+	    transform: rotate(45deg) scale(3.5);
 	}
 }
 
