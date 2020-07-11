@@ -8,16 +8,6 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-	width: 100%;
-	min-height: 300px;
-	overflow: hidden;
-}
-
-body {
-	padding: 20px;
-}
 
 /* SPACESHIP */
 path, circle, line {
@@ -40,8 +30,27 @@ line {
 	stroke: deeppink;
 }
 
-
 /* BASICS */
+html, body {
+	height: 100%;
+	width: 100%;
+	min-height: 300px;
+	overflow: hidden;
+}
+
+body {
+	padding: 20px;
+}
+
+small {
+	color: deeppink;
+	font-size: 0.6em;
+	display: block;
+	margin: -10px auto 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
 input {
 	background: #f3f3f3;
 	border: 0;

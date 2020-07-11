@@ -10,14 +10,14 @@
 <body>
 	<h1 id="gameTitle">Spaceman</h1>
 
-	<div id="newWordScreen" class="screen">
-		<input id="word" type="password" maxlength="24" />
-
+	<div id="newWordScreen" class="screen show">
+		<input id="word" type="password" maxlength="20" placeholder="New Word" />
+		<small>* max 20 characteres</small>
 		<button id="showWord" class="button warn">Show word</button>
-		<button id="startGame">Start Game</button>
+		<button id="startGame" class="button">Start Game</button>
 	</div>
 
-	<div id="gameScreen" class="screen show">
+	<div id="gameScreen" class="screen">
 		<div class="spaceship">
 			<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
 			  <line id="landing_gear1" x1="118.99179573145486" y1="329.4255625668849" x2="96.7174694368968" y2="415.0058688565027"/>
@@ -31,20 +31,10 @@
 			  <circle id="small_window1" cx="101.407" cy="247.948" r="16.999"/>
 			  <circle id="small_window2" cx="234.467" cy="272.567" r="16.999"/>
 			  <circle id="small_window3" cx="373.388" cy="273.154" r="16.999"/>
-
 			</svg>
 		</div>
 
-		<div class="guessedLetters">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
+		<div class="guessedLetters"></div>
 
 		<div class="alphabet">
 			<ul>
