@@ -1,0 +1,96 @@
+/* CSS RESET */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;	
+	outline: none;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	padding: 20px;
+}
+
+/* BASICS */
+input {
+	background: #f3f3f3;
+	border: 0;
+	border-radius: 5px;
+	
+	display: block;
+
+	padding: 8px 15px;
+
+	width: 100%;
+
+	text-transform: uppercase;
+}
+
+button {
+	color: #fff;
+	font-weight: bold;
+
+	background: #74e0b1;
+	border: 1px solid transparent;
+	border-radius: 5px;
+
+	padding: 8px 15px;
+
+	cursor: pointer;
+
+	transition: border-color 0.25s ease-in-out,
+				opacity 0.25s ease-in-out;
+}
+
+button:hover {
+	border-color: #fff;
+	opacity: 0.8;
+}
+
+button.warn {
+	background: #e0b174;
+}
+
+#gameTitle {
+	display: block;
+
+	font-size: 3.5em;
+	text-align: center;
+	color: #fff;
+	text-shadow: 5px 5px 3px mediumpurple, 
+				-5px -5px 3px deeppink;
+
+	margin: 0 auto;
+
+	width: 400px;
+}
+
+/* SCREENS */
+.screen {
+	display: none;
+}
+
+.screen.show {
+	display: block;
+}
+
+#newWordScreen {
+	margin: 60px auto;
+
+	height: 300px;
+	width: 400px;
+
+	text-align: center;
+}
+
+#newWordScreen input {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+	text-align: center;	
+}
