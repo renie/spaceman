@@ -19,6 +19,28 @@ body {
 	padding: 20px;
 }
 
+/* SPACESHIP */
+path, circle, line {
+	stroke-width: 16px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	fill-opacity: 0;
+	box-shadow: 1px 1px 1px #000;
+}
+
+path {
+	stroke: mediumpurple;
+}
+
+circle {
+	stroke: #74e0b1;
+}
+
+line {
+	stroke: deeppink;
+}
+
+
 /* BASICS */
 input {
 	background: #f3f3f3;
@@ -119,12 +141,6 @@ input {
 	width: 100%;
 }
 
-.guessedLetters {
-	border-bottom: 2px dotted #f0f0f0;
-	margin-bottom: 2%;
-	height: 13%;
-}
-
 .alphabet {
 	padding-top: 15px;
 	height: 25%;
@@ -197,4 +213,32 @@ input {
     top: 3px;
     left: 23px;
     transform: rotate(45deg) scale(1.7);
+}
+
+.guessedLetters {
+	border-bottom: 2px dotted #f0f0f0;
+	margin-bottom: 2%;
+	height: 13%;
+}
+
+.guessedLetters ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:  center;
+}
+
+.guessedLetters li {
+	list-style: none;
+
+	background: RGBA(147, 112, 219, 0.2);
+	border-bottom: 2px solid mediumpurple;
+	margin: 0 8px 5px 0;
+	min-width: 50px;
+    height: 50px;
+    line-height: 47px;
+
+	color: deeppink;
+    font-size: 2em;
+	font-weight: bold;
+	text-align: center;
 }

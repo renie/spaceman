@@ -11,30 +11,40 @@
 	<h1 id="gameTitle">Spaceman</h1>
 
 	<div id="newWordScreen" class="screen">
-		<input id="word" type="password" />
+		<input id="word" type="password" maxlength="24" />
 
 		<button id="showWord" class="button warn">Show word</button>
-		<button id="startGame">Start Game</button> 
+		<button id="startGame">Start Game</button>
 	</div>
 
 	<div id="gameScreen" class="screen show">
 		<div class="spaceship">
 			<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-			  <path id="ship" style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0); stroke-width: 16px; stroke-linejoin: round; stroke-linecap: round; fill-opacity: 0;" d="M 135.405 171.16 C 135.405 171.16 -36.335 137.557 28.136 255.568 C 92.607 373.579 382.853 359.61 447.831 315.357 C 512.809 271.104 423.28 185.853 355.216 191.676"/>
+			  <line id="landing_gear1" x1="118.99179573145486" y1="329.4255625668849" x2="96.7174694368968" y2="415.0058688565027"/>
+			  <line id="landing_gear2" x1="243.25908979583136" y1="349.9413894171357" x2="237.98359146290971" y2="438.4525281139322"/>
+			  <line id="landing_gear3" x1="372.80188219312953" y1="343.49355812134263" x2="386.2837112661515" y2="435.5216957067535"/>
 
-			  <path id="cockpit_window" style="stroke-width: 16px; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0); fill-opacity: 0;" d="M 127.785 181.711 C 127.785 181.711 175.264 116.647 258.499 117.233 C 341.734 117.819 359.906 208.676 359.906 208.676 C 359.906 208.676 260.04 232.158 213.364 226.26 C 166.688 220.362 161.354 211.706 127.785 181.711 Z"/>
+			  <path id="ship" d="M 135.405 171.16 C 135.405 171.16 -36.335 137.557 28.136 255.568 C 92.607 373.579 382.853 359.61 447.831 315.357 C 512.809 271.104 423.28 185.853 355.216 191.676"/>
 
-			  <circle id="small_window1" style="stroke-width: 16px; stroke: rgb(0, 0, 0); fill: rgba(255, 255, 255, 0); fill-opacity: 0;" cx="101.407" cy="247.948" r="16.999"/>
-			  <circle id="small_window2" style="stroke-width: 16px; stroke: rgb(0, 0, 0); fill: rgba(255, 255, 255, 0); fill-opacity: 0;" cx="234.467" cy="272.567" r="16.999"/>
-			  <circle id="small_window3" style="stroke-width: 16px; stroke: rgb(0, 0, 0); fill: rgba(255, 255, 255, 0); fill-opacity: 0;" cx="373.388" cy="273.154" r="16.999"/>
+			  <path id="cockpit_window" d="M 127.785 181.711 C 127.785 181.711 175.264 116.647 258.499 117.233 C 341.734 117.819 359.906 208.676 359.906 208.676 C 359.906 208.676 260.04 232.158 213.364 226.26 C 166.688 220.362 161.354 211.706 127.785 181.711 Z"/>
 
-			  <line id="landing_gear1" style="stroke: rgb(0, 0, 0); stroke-width: 16px; stroke-linecap: round; stroke-linejoin: round;" x1="118.99179573145486" y1="329.4255625668849" x2="96.7174694368968" y2="415.0058688565027"/>
-			  <line id="landing_gear2" style="stroke: rgb(0, 0, 0); stroke-width: 16px; stroke-linecap: round; stroke-linejoin: round;" x1="243.25908979583136" y1="349.9413894171357" x2="237.98359146290971" y2="438.4525281139322"/>
-			  <line id="landing_gear3" style="stroke: rgb(0, 0, 0); stroke-width: 16px; stroke-linecap: round; stroke-linejoin: round;" x1="372.80188219312953" y1="343.49355812134263" x2="386.2837112661515" y2="435.5216957067535"/>
+			  <circle id="small_window1" cx="101.407" cy="247.948" r="16.999"/>
+			  <circle id="small_window2" cx="234.467" cy="272.567" r="16.999"/>
+			  <circle id="small_window3" cx="373.388" cy="273.154" r="16.999"/>
+
 			</svg>
 		</div>
 
-		<div class="guessedLetters"></div>
+		<div class="guessedLetters">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 
 		<div class="alphabet">
 			<ul>

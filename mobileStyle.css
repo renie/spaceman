@@ -64,6 +64,14 @@
 		height: 25%;
 	}
 
+	.guessedLetters li {
+		min-width: 28px;
+		height: 28px;
+		line-height: 27px;
+		font-size: 1em;
+		margin: 0 2px 2px 0;
+	}
+
 	.alphabet li {
 		min-width: 48px;
 	    height: 48px;
@@ -85,6 +93,14 @@
   and (max-width: 395px) {
 	.spaceship {
 		height: 35%;
+	}
+
+	.guessedLetters li {
+		min-width: 23px;
+		height: 23px;
+		line-height: 22px;
+		font-size: 1em;
+		margin: 0 2px 2px 0;
 	}
 
 	.alphabet li {
@@ -118,6 +134,24 @@
 	#gameTitle {
 		font-size: 2em;
 		width: 100%;
+	}
+
+	.alphabet li {
+		min-width: 35px;
+	    height: 35px;
+	}
+
+	.alphabet button {
+	    line-height: 0px;	
+		font-size: 0.8em;
+	}
+
+	.guessedLetters li {
+		min-width: 20px;
+	    height: 20px;
+	    line-height: 22px;
+	    font-size: 1em;
+	    margin: 0 2px 2px 0;
 	}
 
 	/* BASICS */
