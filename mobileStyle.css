@@ -48,6 +48,56 @@
 	#newWordScreen input {
 		margin-bottom: 60px;
 	}
+
+	#gameScreen {
+		margin: 0 auto;
+	}
+}
+
+@media screen 
+  and (max-width: 540px) {
+	.spaceship {
+		height: 45%;
+	}
+
+	.alphabet {
+		height: 25%;
+	}
+
+	.alphabet li {
+		min-width: 48px;
+	    height: 48px;
+	    line-height: 46px;
+	}
+
+	.alphabet button {
+		font-size: 1em;
+	}
+
+	.alphabet button.used:before {
+		top: 14px;
+	    left: 21px;
+	    transform: rotate(45deg) scale(3.3);
+	}
+}
+
+@media screen 
+  and (max-width: 395px) {
+	.spaceship {
+		height: 35%;
+	}
+
+	.alphabet li {
+		min-width: 40px;
+	    height: 40px;
+	    line-height: 38px;
+	}
+
+	.alphabet button.used:before {
+		top: 9px;
+	    left: 22px;
+	    transform: rotate(45deg) scale(3.3);
+	}
 }
 
 @media screen 
