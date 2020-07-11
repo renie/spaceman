@@ -1,0 +1,49 @@
+@media screen 
+  and (max-width: 600px) {
+	
+	/* BASICS */
+	button, input {
+		font-size: 1.2em;
+		padding: 12px 18px;
+	}
+
+	#gameTitle {
+		font-size: 2.5em;
+		width: 100%;
+	}
+
+	/* SCREENS */
+	#newWordScreen {
+		width: 100%;
+	}
+
+	#newWordScreen input {
+		margin-bottom: 60px;
+	}
+}
+
+@media screen 
+  and (max-width: 330px) {
+
+	/* BASICS */
+	button, input {
+		font-size: 1em;
+		padding: 12px 18px;
+	}
+
+	button {
+		display: block;
+		margin: 5px auto;
+		width: 100%;
+	}
+
+	#gameTitle {
+		font-size: 2em;
+		width: 100%;
+	}
+
+	/* BASICS */
+	body {
+		padding: 20px 5px;
+	}
+}

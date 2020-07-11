@@ -29,6 +29,8 @@ input {
 
 	width: 100%;
 
+	color: #666;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
@@ -47,21 +49,22 @@ button {
 	transition: border-color 0.25s ease-in-out,
 				opacity 0.25s ease-in-out;
 }
-
-button:hover {
-	border-color: #fff;
-	opacity: 0.8;
-}
+	
+	button:hover {
+		border-color: #fff;
+		opacity: 0.8;
+	}
 
 button.warn {
 	background: #e0b174;
 }
 
+
 #gameTitle {
 	display: block;
 
-	font-size: 3.5em;
 	text-align: center;
+	font-size: 3.5em;
 	color: #fff;
 	text-shadow: 5px 5px 3px mediumpurple, 
 				-5px -5px 3px deeppink;
