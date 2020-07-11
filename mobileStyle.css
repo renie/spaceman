@@ -1,4 +1,32 @@
 @media screen 
+  and (max-height: 990px) {
+	#gameScreen {
+		height: 85%;
+	}
+}
+
+@media screen 
+  and (max-height: 660px) {
+	#gameScreen {
+		height: 80%;
+	}
+}
+
+@media screen 
+  and (max-height: 440px) {
+	#gameScreen {
+		height: 75%;
+	}
+}
+
+@media screen 
+  and (max-height: 330px) {
+	#gameScreen {
+		height: 70%;
+	}
+}
+
+@media screen 
   and (max-width: 600px) {
 	
 	/* BASICS */

@@ -11,6 +11,8 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	min-height: 300px;
+	overflow: hidden;
 }
 
 body {
@@ -84,11 +86,9 @@ button.warn {
 }
 
 #newWordScreen {
-	margin: 60px auto;
-
 	height: 300px;
 	width: 400px;
-
+	margin: 60px auto;
 	text-align: center;
 }
 
@@ -96,4 +96,34 @@ button.warn {
 	font-size: 1.5em;
 	margin-bottom: 15px;
 	text-align: center;	
+}
+
+#gameScreen {
+	margin: 30px auto;
+
+	height: 90%;
+	width: 100%;
+}
+
+/* GAME */
+#gameScreen > div {
+	width: 100%;
+}
+
+.spaceship {
+	height: 60%;
+}
+
+.spaceship svg {
+	height: 100%;
+	width: 100%;
+}
+
+.guessedLetters {
+	background: #f4f4f4;
+	height: 15%;
+}
+
+.alphabet {
+	height: 25%;
 }
